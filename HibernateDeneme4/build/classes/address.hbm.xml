@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd" >
+<hibernate-mapping>
+    <class name="Model.AddressForm" table="address_table" catalog="intecon">
+        <id name="IDX" type="java.lang.Integer">
+            <column name="IDX" />
+            <generator class="identity" />
+        </id> 
+        <property column="ADDRCODE" name="ADDRCODE" type="java.lang.String" />
+        <property column="ADDRTYPE" name="ADDRTYPE" type="java.lang.String" />
+        <property column="ADDRESS" name="ADDRESS" type="java.lang.String" />
+        <property column="DISTRICT" name="DISTRICT" type="java.lang.String" />
+        <property column="ZIPCODE" name="ZIPCODE" type="java.lang.String" />
+		<property column="CITY" name="CITY" type="java.lang.String" />
+    </class>
+</hibernate-mapping>

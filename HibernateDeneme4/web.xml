@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+    <display-name>HibernateDeneme4</display-name>
+    <servlet>
+        <display-name>AddressControllerServlet</display-name>
+        <servlet-name>AddressControllerServlet</servlet-name>
+        <servlet-class>HibernateController.AddressControllerServlet</servlet-class>
+    </servlet>
+<servlet-mapping>
+	<servlet-name>AddressControllerServlet</servlet-name>
+        <url-pattern>/AddressControllerServlet</url-pattern>
+</servlet-mapping>
+    <servlet>
+        <display-name>Success</display-name>
+        <servlet-name>Success</servlet-name>
+        <servlet-class>HibernateController.Success</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Address</servlet-name>
+        <url-pattern>/index</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Success</servlet-name>
+        <url-pattern>/Success</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+    <servlet-name>Ekle</servlet-name>
+    <url-pattern>/Ekle</url-pattern>
+</servlet-mapping>
+<servlet-mapping>
+    <servlet-name>Duzenle</servlet-name>
+    <url-pattern>/Duzenle</url-pattern>
+</servlet-mapping>
+<servlet-mapping>
+    <servlet-name>Sil</servlet-name>
+    <url-pattern>/Sil</url-pattern>
+</servlet-mapping>
+    <welcome-file-list>
+        <welcome-file>index.jsp</welcome-file>
+    </welcome-file-list>
+</web-app>
